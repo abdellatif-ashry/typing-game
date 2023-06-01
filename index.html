@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="title">typing speed with <span class="js">javascript</span></div>
+    <div class="container" data-level="">
+        <div class="operation1" style="">
+            <div class="level">
+                <h3>choose your level</h3>
+                <div class="selections" >
+                    <button class="easy" data-time="4">easy</button>
+                    <button class="midum" data-time="3">midum</button>
+                    <button class="hard" data-time="6">hard</button>
+                </div>
+            </div>
+            <button class="start">start</button>
+            <h1 class="warnig">
+                please choose a level firstly
+            </h1>
+        </div>
+
+        <div class="operation2" style="display: none;">
+            <p class="label">
+                your level is <span class="choosen_level"></span> you have <span class="choosen_secon">3</span> seconds to finish typing
+            </p>
+            <h1 class="choosen_word">javascript</h1>
+            <input class="type" type="text">
+            <div class="all_words">
+            </div>
+            <div class="timescore">
+                <div class="time">time left is <span class="times"></span> second</div>
+                <div class="score">score <span class="scored">0</span> from <span class="from">22</span></div>
+            </div>
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>

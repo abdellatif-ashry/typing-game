@@ -1,0 +1,201 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    transition-duration: 1s;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #343434;
+}
+.title{
+    margin-top: 100px;
+    background: #343434;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: inherit;
+    text-transform: uppercase;
+}
+@media (min-width:550px) {
+    .title {
+            font-size: 33px;
+        }
+}
+
+@media (min-width:1000px) {
+    .title {
+        font-size: 53px;
+    }
+}
+
+.title .js{
+    color: #e91e63;
+    display: block;
+}
+.container{width: 100%;
+    display: flex;
+    justify-content: center;}
+
+.container .operation1{
+    background-color: #343434;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+}
+.container .operation1 .warnig{
+    text-align: center;
+        padding: 17px;
+        background-color: #e91e63;
+        color: #343434;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 00%);
+        width: 100%;
+        transition-duration: 1s;
+        z-index: -1;
+}
+.container .operation1 .level{
+    text-align: center;
+}
+
+.container .operation1 .level h3{
+    color: white;
+    font-size: 30px;
+}
+
+.container .operation1 .level .selections{
+    display: flex;
+    align-content: space-evenly;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.container .operation1 .level .selections button{
+    width: 100%;
+    margin-bottom: 15px;
+    background: #343434;
+    padding: 5px;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition-duration: 800ms;
+    font-family: 'Orbitron', sans-serif;
+    border: 2px solid #e92063;
+}
+@media (min-width:600px) {
+    .container .operation1 .level .selections {
+        flex-direction: row;
+        justify-content: space-evenly;
+        }
+    .container .operation1 .level .selections button{
+        font-size: 20px;
+        padding: 10px;
+        width: 30%;
+    }
+}
+.container .operation1 .level .selections button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 7px #e91e63;
+}
+
+.container .operation1 .start{
+    width: 25%;
+    margin-top: 35px;
+    background: #343434;
+    color: #e91e63;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 9px;
+    font-weight: bolder;
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    border: 2px solid #e91e63;
+    transition-duration: 300ms;
+}
+
+@media (min-width:600px) {
+    .container .operation1 .start {
+    font-size: 25px;
+    }
+}
+.container .operation1 .start:hover {
+    transform: scale(1.025);
+    box-shadow: 0 0 7px #e91e63;
+}
+.container .operation2 {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.container .operation2>p,
+.container .operation2>h1,
+.container .operation2>input,
+.container .operation2>div{
+    background-color: #444;
+    border-radius: 11px;
+}
+
+.container .operation2 .label{
+    padding: 10px;
+    text-align: center;
+}
+
+.container .operation2 .label span{
+    color: #e91e63;
+}
+
+.container .operation2 .choosen_word{
+    padding: 20px;
+    text-align: center;
+    font-size: 50px;
+    color: #e91e63;
+    transition-duration: 1s;
+}
+
+.container .operation2 input{
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.container .operation2 .all_words{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.container .operation2 .all_words span{
+    padding: 6px;
+    border: 1px solid #e91e63;
+    border-radius: 5px;
+}
+
+.container .operation2 .timescore{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+
+.container .operation2 .timescore .time span{
+    color: #e91e63;
+}
+
+.container .operation2 .timescore .score span{
+    color: #e91e63;
+}
